@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<script>
+    
+    let pessoas = ["Raphael","Karine","Sophia","João","Pedro","Gustavo","Matheus","Mario","Junior","Juliana"]
+
+function sortear (){
+
+    let np = pessoas.length;
+
+    let ns = Math.floor(Math.random() * np);
+
+    document.getElementById("d").innerHTML = pessoas[ns];
+}
+
+</script>
+
+
+</head>
+<body>
+
+    <div id="header">
+
+        <h1>Sorteios dos Devs</h1>
+
+    </div>
+
+    <h1 id="d"></h1>
+
+    <button onclick="sortear()">Sortear</button>
+    
+</body>
+</html>
